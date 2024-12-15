@@ -1,0 +1,224 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    margin: 0;
+    padding: 0; 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    padding: 0 30px; 
+}
+
+body.light-mode {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+header {
+    background-color: #333333;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #ff3366;
+}
+
+header.light-mode {
+    background-color: #f0f0f0;
+    border-bottom: 5px solid #ff6699;
+}
+
+h1 {
+    color: #ff3366;
+    font-size: 3em;
+}
+
+h2, h3 {
+    color: #ff6699;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #ff6699;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #ff3366;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ff99cc;
+}
+
+/* Light Mode for Navigation */
+nav ul.light-mode {
+    background-color: #ff99cc;
+}
+
+nav ul li a.light-mode {
+    background-color: #ff6699;
+    color: #333333;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.gallery figure {
+    background-color: #ffebf2;
+    border: 3px solid #ff99ff;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 30%;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInMoveUp 2s forwards ease-in-out;
+}
+
+.gallery img {
+    max-width: 100%;
+    border-radius: 10px;
+    border: 3px solid #ff6699;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.gallery figcaption {
+    color: #ff3366;
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+@keyframes fadeInMoveUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#media {
+    list-style-type: square;
+    margin: 40px 20px;
+    padding: 0;
+    color: #ff99cc;
+}
+
+#media li {
+    margin-bottom: 20px;
+}
+
+#media img, #media video {
+    width: 100%;
+    max-width: 600px;
+    border: 3px solid #ff6699;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease-in-out;
+}
+
+#media img:hover, #media video:hover {
+    transform: scale(1.05);
+}
+
+#search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+#search form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#search input[type='text'] {
+    padding: 10px;
+    width: 250px;
+    border: 2px solid #ff3366;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#search input[type='submit'] {
+    padding: 10px 20px;
+    background-color: #ff3366;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#search input[type='submit']:hover {
+    background-color: #ff6699;
+}
+
+#generateCatsButton {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #ff6699, #ff3366);
+    border: none;
+    color: white;
+    font-size: 1em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#generateCatsButton:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #333333;
+    padding: 10px;
+    text-align: center;
+    border-top: 3px solid #ff3366;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+footer p {
+    color: #ffffff;
+}
+
+#toggleTheme {
+    padding: 10px 20px;
+    background-color: #ff3366;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+footer.light-mode {
+    background-color: #f0f0f0;
+    color: #333333;
+}

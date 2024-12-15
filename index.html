@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <title>All about Kittylines, the Programmer</title>
+    <link rel='stylesheet' href='styles.css'>
+    <script src='scripts.js' defer></script>
+</head>
+<body>
+    <header>
+        <h1>All about Kittylines, the Programmer</h1>
+        <nav>
+            <ul>
+                <li><a href='about_me.html'>About Me</a></li>
+                <li><a href='favorite_media.html'>My Favorite Media</a></li>
+                <li><a href='sand_cats.html'>Pictures of Sand Cats</a></li>
+            </ul>
+        </nav>
+        <button id='toggleTheme'>Toggle Light/Dark Mode</button>
+    </header>
+    <main>
+        <section id='intro'>
+            <h2>A Brief History of the Internet</h2>
+            <p>The internet started as a project in the 1960s, initially called ARPANET, funded by the U.S. Department of Defense. It connected research institutions and later evolved into the global network we use today.</p>
+            <p>Throughout the 1990s and early 2000s, the <strong>Browser Wars</strong> unfolded as companies vied for dominance in the emerging web browser market. Microsoft's Internet Explorer (IE) emerged as the dominant force due to its bundling with Windows, but not without challenges. Netscape Navigator was a popular competitor, but it eventually gave way to Mozilla Firefox and later Google Chrome. One of IE's shortcomings was its slow adoption of web standards, security vulnerabilities, and poor performance, which made developers and users prefer alternatives like Firefox.</p>
+            <p><strong>Why Internet Explorer Sucks</strong>: Internet Explorer was notorious for its slow performance, poor security, and lack of web standards support. These issues frustrated users and web developers alike, forcing many to look for alternatives.</p>
+            <p><strong>Why Mozilla Firefox is Good</strong>: Firefox, on the other hand, offered better security, speed, and adherence to web standards. It is also open-source, allowing developers to contribute to its improvement, which has made it popular among the developer community.</p>
+            <div class='input-form'>
+                <form id='userForm' method='GET' action=''>
+                    <label for='username'>Enter your name:</label>
+                    <input type='text' id='username' name='username' required>
+                    <input type='submit' id='submit' value='Submit'>
+                </form>
+            </div>
+        </section>
+        <section id='search'>
+            <form action='https://www.google.com/search' method='get' target='_blank'>
+                <input type='text' name='q' placeholder='Search Google'>
+                <input type='submit' value='Search'>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; AW 2024</p>
+    </footer>
+</body>
+</html>
